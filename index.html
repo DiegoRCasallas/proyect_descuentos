@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="discounts.js"></script>
+    <title>Descuentos</title>
+
 </head>
+
 <body>
-    
+    <header>
+        <h1>Tienda Descuentos</h1>
+        <p>Segundo taller Practico JavaScritp</p>
+    </header>
+
+    <section>
+        <h2>Calucula el precio a pagar de tus productos condescuento</h2>
+        <form>
+            <label for="inputPrice">Escribe precio</label>
+            <input id="inputPrice"/ type="number" >
+            <label for="inputCoupon">Ingrese cupon</label>
+            <input id="inputCoupon"/ type="number">
+            <button type="button" onclick="onClickPrice()">Calcular precio final</button>
+            <!--escribiremos directamente en el HTML desde el JavaScript
+            en la etiqueta p. Utilizando el atributo id -->
+            <p id="finalPrice"></p>
+        </form>
+    </section>
+
+    <script src="discounts.js"></script>
+    <!--Los scripts van en el body-->
 </body>
+
 </html>
